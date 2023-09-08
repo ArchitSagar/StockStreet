@@ -5,22 +5,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StockStreet</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="container.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 <body>
-    <!-- header -->
-    <nav>
-        <div>
-          <img class="logo" src="SS logo.png" alt="">
-        </div>
-        <ul class="menu">
-            <li class="nav-link nav-active"><a href="#">Home</a></li> 
-            <li class="nav-link"><a href="#">About Us</a></li>
-            <li class="nav-link"><a href="#">contact</a></li>
-        </ul>
-    </nav>
 
+    <div class="background"></div>
     
+    <div class="tradingview-widget-container" id="tradingview-container">
+      <div class="tradingview-widget-container__widget"></div>
+      <div class="tradingview-widget-copyright"><a href="https://in.tradingview.com/" rel="noopener nofollow" target="_blank"></a></div>
+    </div>
+  
+    
+    <div class="content">
+      <div>
+        <nav class="header">
+          <div>
+            <img class="logo" src="SS logo.png" alt="">
+          </div>
+          <ul class="menu">
+              <li><a class="nav-link nav-active" href="#">Home</a></li> 
+              <li><a class="nav-link" href="#footer">About Us</a></li>
+              <li><a class="nav-link" href="#footer">Contact</a></li>
+          </ul>
+        </nav> 
+      </div>
+      
+      <div class="search">
+        <form>
+            <input class="input" type="text" id="securityInput" placeholder="   search you fav stocks">
+            <button class="icon-button" id="searchButton">
+              <i class="fas fa-search"></i>
+            </button>
 
+        </form>
+        <div id="result">
+            
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3>Ownership</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p style="color: black;">When you own stock in a company, you have a claim on a portion of its assets and earnings. Your ownership stake is proportional to the number of shares you hold relative to the total number of outstanding shares.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3>Equity</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p style="color: black;">Stocks are often referred to as "equities" because they represent ownership equity in a company. Shareholders are entitled to a portion of the company's profits and may have voting rights in certain corporate decisions.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3>Dividends</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p style="color: black;">Some companies distribute a portion of their profits to shareholders in the form of dividends. Not all stocks pay dividends, and dividend amounts can vary widely.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3>Price Fluctuation</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p style="color: black;"> Stock prices can fluctuate daily based on factors like company performance, economic conditions, market sentiment, and news events. This price volatility can offer opportunities for investors but also involves risks.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3>Stock Exchanges</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p style="color: black;">Stocks are typically bought and sold on stock exchanges like the New York Stock Exchange (NYSE) or the Nasdaq. These exchanges provide a marketplace where buyers and sellers can trade stocks.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3>Investment</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p style="color: black;">Many people invest in stocks as a way to grow their wealth over time. Historically, stocks have provided the potential for significant long-term returns, but they also come with the risk of losing money.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3>Diversification</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p style="color: black;">Investors often build diversified portfolios of stocks to spread risk. Diversification involves investing in a variety of stocks from different industries or sectors to reduce the impact of poor performance by any single company.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h3>Research</h3>
+                </div>
+            </div>
+            <div class="face face2">
+                <div class="content">
+                    <p style="color: black;">Before investing in stocks, it's important to research companies, review their financial statements, assess their growth prospects, and consider your investment goals and risk tolerance.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+      <div id="footer">
+          <p>&copy; Stockstreet.com</p>
+          <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact Us</a></li>
+          </ul>
+          <div class="contact-info">
+              <p>Contact us at: stockstreet@gmail.com</p>
+              <p>Phone: 6261826554</p>
+          </div>
+          <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              
+          </div>
+      </div>
+    </footer>
+  
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
