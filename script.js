@@ -114,7 +114,8 @@ const securityInput = document.getElementById('securityInput');
 const searchButton = document.getElementById('searchButton');
 
 
-searchButton.addEventListener('click', () => {
+searchButton.addEventListener('click', (e) => {
+    e.preventDefault();
     let userInput = securityInput.value.toUpperCase(); // Convert input to uppercase
     searchSecurity(userInput);
 });
