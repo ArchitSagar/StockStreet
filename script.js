@@ -46,6 +46,7 @@ tradingViewScript.innerHTML = JSON.stringify({
         
     ],
     "showSymbolLogo": true,
+    "height":46,
     "colorTheme": "dark",
     "isTransparent": false,
     "displayMode": "adaptive",
